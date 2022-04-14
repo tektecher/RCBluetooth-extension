@@ -42,7 +42,7 @@ Blockly.Python['RC_Recived'] = function(block) {
   // -----------------------------
 
   var functionName = Blockly.Python.provideFunction_(
-      'RCGetting',
+    value_text+'RCGetting',
       ['def ' + Blockly.Python.FUNCTION_NAME_PLACEHOLDER_ + '(_=None):',
       globals,
       statements_callback]);
