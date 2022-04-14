@@ -7,7 +7,7 @@ ble_msg = ""
 is_RC_connected = False
 class RC_BLE():
     def __init__(self, name):
-        self.name = RC_BLE_name
+        self.name = name
         self.ble = ubluetooth.BLE()
         self.ble.active(True)
         self.disconnected()
