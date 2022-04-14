@@ -1,7 +1,7 @@
 Blockly.Python['RC_setup'] = function(block) {
   Blockly.Python.definitions_['import_RCBluetooth'] = 'import RCBluetooth';
   
-  var code = `RC = RC_BLE("RC2")\n`;
+  var code = `RCBluetooth = RC_BLE("RC2")\n`;
   return code;
 };
 
@@ -12,7 +12,7 @@ Blockly.Python['RC_Send'] = function(block) {
   
   var value_text = Blockly.Python.valueToCode(block, 'text', Blockly.Python.ORDER_ATOMIC);
   //var value_text = block.getFieldValue('text');
-  var code = `RC.send(str(${value_text}))\n`;
+  var code = `RCBluetooth.send(str(${value_text}))\n`;
   return code;
 };
 
@@ -53,6 +53,6 @@ Blockly.Python['RC_Recived'] = function(block) {
       globals,
       statements_callback]);
 
-  code = `RC.Received(${value_text}, ${functionName})\n`;
+  code = `RCBluetooth.Received(${value_text}, ${functionName})\n`;
   return code;
 };
