@@ -8,7 +8,6 @@
     color: "#004098", // Category color (recommend some blocks color)
     blocks: [ // Blocks in Category
 
-                "RC_setup",
                 "RC_Recived",
                 {
                     xml: `

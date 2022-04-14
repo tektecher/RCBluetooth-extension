@@ -1,16 +1,6 @@
 Blockly.defineBlocksWithJsonArray(
   [
     {
-      "type": "RC_setup",
-      "message0": "Start Bluetooth setup",
-      "inputsInline": true,
-      "previousStatement": null,
-      "nextStatement": null,
-      "colour": "#40a18a",
-      "tooltip": "",
-      "helpUrl": ""
-    }, 
-    {
     "type": "RC_Send",
     "message0": "RC Send  %1 ",
     "args0": [

@@ -1,9 +1,3 @@
-Blockly.Python['RC_setup'] = function(block) {
-  Blockly.Python.definitions_['import_RCBluetooth'] = 'import RCBluetooth';
-  
-  var code = `RCBluetooth = RC_BLE("RC2")\n`;
-  return code;
-};
 
 
 

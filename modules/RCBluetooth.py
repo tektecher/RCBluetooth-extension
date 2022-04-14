@@ -65,7 +65,7 @@ class RC_BLE():
         adv_data = bytearray('\x02\x01\x02') + bytearray((len(name) + 1, 0x09)) + name
         self.ble.gap_advertise(100, adv_data)
 
-RC = RC_BLE("RC")
+RCBluetooth = RC_BLE("RC2")
 
 def Received (RC_message, callback):
     global ble_msg
