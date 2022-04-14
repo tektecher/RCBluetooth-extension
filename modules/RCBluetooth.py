@@ -7,7 +7,7 @@ ble_msg = ""
 is_RC_connected = False
 class RC_BLE():
     def __init__(self, name):
-        self.name = name
+        self.name = RC_BLE_name
         self.ble = ubluetooth.BLE()
         self.ble.active(True)
         self.disconnected()
@@ -64,6 +64,8 @@ class RC_BLE():
         name = bytes(self.name, 'UTF-8')
         adv_data = bytearray('\x02\x01\x02') + bytearray((len(name) + 1, 0x09)) + name
         self.ble.gap_advertise(100, adv_data)
+
+RC = RC_BLE("RC")
 
 def Received (RC_message, callback):
     global ble_msg
