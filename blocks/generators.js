@@ -6,7 +6,7 @@ Blockly.Python['RC_Send'] = function(block) {
   
   var value_text = Blockly.Python.valueToCode(block, 'text', Blockly.Python.ORDER_ATOMIC);
   //var value_text = block.getFieldValue('text');
-  var code = `RCBluetooth.send(str(${value_text}))\n`;
+  var code = `RCBluetooth.Send(str(${value_text}))\n`;
   return code;
 };
 

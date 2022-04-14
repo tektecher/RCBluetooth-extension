@@ -67,6 +67,7 @@ class RC_BLE():
 
 RCBluetooth = RC_BLE("RC2")
 
+
 def Received (RC_message, callback):
     global ble_msg
     while True:
@@ -81,3 +82,6 @@ def Connection_State():
     global is_RC_connected
     return is_RC_connected
 
+
+def Send(data):
+    RCBluetooth.send(data)
