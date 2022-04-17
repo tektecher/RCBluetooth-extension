@@ -9,17 +9,17 @@
     blocks: [ // Blocks in Category
 
                 "RC_Recived",
-                {
-                    xml: `
-                        <block type="RC_Send">
-                            <value name="text">
-                                <shadow type="text">
-                                    <field name="TEXT">Hello</field>
-                                </shadow>
-                            </value>
-                        </block>
-                    `
-                },
+//                 {
+//                     xml: `
+//                         <block type="RC_Send">
+//                             <value name="text">
+//                                 <shadow type="text">
+//                                     <field name="TEXT">Hello</field>
+//                                 </shadow>
+//                             </value>
+//                         </block>
+//                     `
+//                 },
                 {
                     xml: `
                         <block type="text">
